@@ -1,0 +1,8 @@
+find_duplicates(arr): 
+	seen = set() 
+	duplicates = set() 
+	for x in arr: 
+		if x in seen: 
+			duplicates.add(x) 
+		seen.add(x) 
+	return list(duplicates)
