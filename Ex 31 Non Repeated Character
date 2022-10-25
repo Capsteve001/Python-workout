@@ -1,0 +1,23 @@
+string = "geeksforgeeks"
+index = -1
+fnc = ""
+for i in string:
+if string.count(i) == 1:
+fnc += i
+break
+else:
+index += 1
+if index == 1:
+print("Either all characters are repeating or string is empty")
+else:
+print("First non-repeating character is", fnc)
+18.How can you remove duplicates from arrays?
+Solution:
+def Remove(duplicate):
+final_list = []
+for num in duplicate:
+if num not in final_list:
+final_list.append(num)
+return final_list
+duplicate = [2, 4, 10, 20, 5, 2, 20, 4]
+print(Remove(duplicate))
