@@ -19,3 +19,11 @@ def QuickSort(arr):
 array_to_be_sorted = [4,2,7,3,1,6]
 print("Original Array: ",array_to_be_sorted)
 print("Sorted Array: ",QuickSort(array_to_be_sorted))
+def Remove(number):
+ final_list = []
+ for num in number:
+ if num not in final_list:
+ final_list.append(num)
+ return final_list
+number = [2, 4, 10, 20, 5, 2, 20, 4]
+print(Remove(number))
