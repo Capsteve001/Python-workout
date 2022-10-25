@@ -1,0 +1,5 @@
+a = "\u0030"
+b = "\u00B2"
+c = "10km2"
+print(a.isnumeric())
+print(b.isnumeric())
